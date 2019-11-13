@@ -16,8 +16,12 @@ module.exports = {
     },
 
     printArrayElements: function (array) {
-        for(let i = 0; i < array.length; i++){
-          console.log(array[i]);
+        if(typeof array === "string"){
+            console.log(array)
+        }else{
+            for(let i = 0; i < array.length; i++){
+                console.log(array[i]);
+              }
         }
       }
 }
